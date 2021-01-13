@@ -5,23 +5,49 @@ const fs = require('fs');
 
 // array of questions for user - adjust qs for readmes  
 const questions = [
-        {
-          type: 'input',
-          name: 'title',
-          message: 'What is your name?',
-        },
-        {
-            type: 'input',
-            name: 'body',
-            message: 'What is your name?',
-        },
-        {
-          type: 'list',
-          name: 'icon',
-          message: 'What is your preferred method of communication?',
-          choices: ['email', 'phone', 'telekinesis'],
-        },
-
+    {
+        type: "input",
+        name: "githubUser",
+        message: "What is your GitHub Username?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your email address?"
+    },
+    {
+        type: "input",
+        name: "title",
+        message: "What is the project title?"
+    },
+    {
+        type: "input",
+        name: "description",
+        message: "What is a description of your project?"
+    },
+    {
+        type: "list",
+        name: "license",
+        message: "Choose License type:",
+        choices: [
+            "MIT",
+            "APACHE 2.0",
+            "GPL 3.0",
+            "BSD 3",
+            "None"
+        ],
+    },
+    {
+        type: "input",
+        name: "installCommand",
+        message: "What command should be run to install dependencies?",
+        default: 'npm i',
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "What is the usage of your project?"
+    },
 ];
 
 // function to write README file
