@@ -52,15 +52,24 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-
-    
-
+    fs.writeFile('README.md', data, function (err) {
+        if (err) {
+            console.log(err);
+            throw err;
+        }
+    });
 }
+
 
 // function to initialize program
 function init() {
-    inquirer.prompt(questions).then((data) => {})
-
+    inquirer
+    .prompt(questions)
+    .then(function(data) {
+        console.log("Fabulous!");
+        writeToFile("README.md", generateMarkdown(data));
+        console.log("One moment please. Your README is generating.")
+    })
 }
 
 // function call to initialize program
