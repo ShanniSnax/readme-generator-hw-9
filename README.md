@@ -1,8 +1,8 @@
-# Good Read Me Generator
+# Generate ReadMe
     ![GitHub License](https://img.shields.io/badge/License-None-blue)
   
     ## Description
-    This app allows you to quickly and easily put together a README for your projects. 
+    This app allows you to quickly and easily generate a readme for your projects.
     <br>
     <br>
   
@@ -10,8 +10,6 @@
     * [Installation](#Installation)
     * [Usage](#Usage)
     * [License](#License)
-    * [Contributing](#Contributing)
-    * [Tests](#Tests)
     * [Questions](#Questions)
    <br>
    <br>
@@ -21,12 +19,12 @@
 ```
 npm i
 ```
-    
+
     <br>
     <br>
   
     ## Usage
-    Run 'node index.js' in order to get the generator going. 
+    Run node index.js in order to start the app.
     <br>
     <br>
   
